@@ -11,6 +11,8 @@
         padding: 1em 2em;
         margin: 1em;
         font-size: 1.3rem;
+        border: 2px solid black;
+        border-radius: 15px;
       }
       .center {
         display: grid;
@@ -32,8 +34,11 @@
 
     <script>
       $( ".clickBtn" ).click(function() {
-        $(".clickBtn").velocity("callout.shake");
+        $(".clickBtn").velocity("transition.fadeIn");
     });
+      $(".hoverBtn").hover(function () {
+        $(".hoverBtn").velocity("transition.bounceOut")
+      })
     </script>
   </body>
 </html>

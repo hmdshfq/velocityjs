@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocity</title>
+    <style>
+      .clickBtn,
+      .hoverBtn {
+        padding: 1em 2em;
+        margin: 1em;
+        font-size: 1.3rem;
+      }
+      .center {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <div class="clickBtn">Click Button</div>
+      <div class="hoverBtn">Hover Button</button>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.ui.min.js"></script>
+
+    <script>
+    //   $( ".clickBtn" ).click(function() {
+    //     $(".clickBtn").velocity("callout.shake");
+    // });
+    $(".clickBtn").velocity("callout.shake");
+      
+    </script>
+  </body>
+</html>
